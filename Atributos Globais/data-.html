@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-*</title>
+</head>
+<body>
+
+    <ul>
+        <li data-id="1" data-email="dfellipe7@gmail.com">Daniel</li>
+        <li data-id="2" data-email="fellipe@pgacrilicos.com.br">Fellipe</li>
+        <li data-id="3" data-email="dfellipe@outlook.com">Palma</li>
+        <li data-id="4" data-email="fellipe27@bol.com.br">da Silva</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEl => {
+            
+            // Formato HTMLElement.dataset.valor ou HTMLElement.dataset["Valor"]
+
+            // Trás todos os dados
+            //console.log(liEl.dataset);
+
+            // Por dado especifico
+            console.log(liEl.dataset.id);
+            console.log(liEl.dataset.email);
+        })
+
+    </script>
+    
+</body>
+</html>
