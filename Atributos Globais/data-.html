@@ -7,12 +7,21 @@
 </head>
 <body>
 
-    <ul>
-        <li data-id="1" data-email="dfellipe7@gmail.com">Daniel</li>
-        <li data-id="2" data-email="fellipe@pgacrilicos.com.br">Fellipe</li>
-        <li data-id="3" data-email="dfellipe@outlook.com">Palma</li>
-        <li data-id="4" data-email="fellipe27@bol.com.br">da Silva</li>
-    </ul>
+    <h1>Data-*</h1>
+    <p>Forma uma classe de atributos, denominado de dados personalizados, que permite troca de informações proprietárias entre o HTML e a sua representação no DOM pode ser usada por scripts. Todos esses dados personalizados estão disponíveis através da interface do elemento HTMLElement em que o atributo está definido. A propriedade  HTMLElement.dataset  dá acesso a eles.
+        <br>
+        <span>Fonte: MDN web Docs moz://a</span>
+    </p>
+
+    <div class="exemplo">
+        <h2>Exemplo</h2>
+        <ul>
+            <li data-id="1" data-email="dfellipe7@gmail.com">Daniel</li>
+            <li data-id="2" data-email="fellipe@pgacrilicos.com.br">Fellipe</li>
+            <li data-id="3" data-email="dfellipe@outlook.com">Palma</li>
+            <li data-id="4" data-email="fellipe27@bol.com.br">da Silva</li>
+        </ul>
+    </div>
 
     <script>
         document.querySelectorAll('li').forEach(liEl => {
