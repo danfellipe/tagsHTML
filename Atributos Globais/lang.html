@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lang</title>
+
+    <style>
+        [lang]{
+            width: 50px;
+        }
+        p::before{
+            padding-right: 5px;
+        }
+        [lang="pt-BR"]::before{
+            content: url('/imgs/br.svg');
+        }
+        [lang="en"]::before{
+            content: url('/imgs/us.svg');
+        }
+        [lang="es"]::before{
+            content: url('/imgs/es.svg');
+        }
+        [lang="fr"]::before{
+            content: url('/imgs/fr.svg');
+        }
+        [lang="de"]::before{
+            content: url('/imgs/de.svg');
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <p lang="pt-BR">Olá Mundo!</p>
+    <p lang="en">Hello World!</p>
+    <p lang="es">Hola mundo</p>
+    <p lang="fr">Bonjour le monde</p>
+    <p lang="de">Hallo Welt</p>
+    
+</body>
+</html>
